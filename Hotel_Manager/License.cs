@@ -17,17 +17,6 @@ namespace Hotel_Manager
         {
             InitializeComponent();
         }
-
-        private void License_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
  
     }
 }

@@ -28,3 +28,33 @@ C:\Users\Nazim\documents\visual studio 2013\Projects\Hotel_Manager\Hotel_Manager
 C:\Users\Nazim\documents\visual studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Debug\Hotel_Manager.FinalizePayment.resources
 C:\Users\Nazim\documents\visual studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Debug\Hotel_Manager.FoodMenu.resources
 C:\Users\Nazim\documents\visual studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Debug\Hotel_Manager.License.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Hotel_Manager.exe.config
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.exe
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.pdb
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\frontend_reservation.mdf
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\frontend_reservation_log.ldf
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\login_manager.mdf
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\login_manager_log.ldf
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Hotel_Manager.exe.manifest
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Hotel_Manager.application
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Hotel_Manager.exe
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Hotel_Manager.pdb
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\MetroFramework.Design.dll
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\MetroFramework.dll
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\RestSharp.dll
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Twilio.Api.dll
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\RestSharp.xml
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Twilio.Api.pdb
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\bin\Debug\Twilio.Api.xml
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.FinalizePayment.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.FoodMenu.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.kitchen.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.License.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.login.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.frontend.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.Properties.Resources.resources
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.csproj.GenerateResource.Cache
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.exe.manifest
+C:\Users\Nazim\Documents\GitHub\secret-shame-csharp\Hotel_Manager\obj\Debug\Hotel_Manager.application

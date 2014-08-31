@@ -29,31 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(License));
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.LicenseText = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
-            // metroLabel1
+            // LicenseText
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(0, 24);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(542, 209);
-            this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = resources.GetString("metroLabel1.Text");
-            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
+            this.LicenseText.AutoSize = true;
+            this.LicenseText.Location = new System.Drawing.Point(-3, 4);
+            this.LicenseText.Name = "LicenseText";
+            this.LicenseText.Size = new System.Drawing.Size(487, 228);
+            this.LicenseText.TabIndex = 0;
+            this.LicenseText.Text = resources.GetString("LicenseText.Text");
             // 
             // License
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 241);
-            this.Controls.Add(this.metroLabel1);
+            this.ClientSize = new System.Drawing.Size(516, 197);
+            this.Controls.Add(this.LicenseText);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "License";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Teal;
-            this.Load += new System.EventHandler(this.License_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,6 +59,6 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel LicenseText;
     }
 }

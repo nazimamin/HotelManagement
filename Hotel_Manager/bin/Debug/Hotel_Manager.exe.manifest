@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6HRbp1Bn8laIGD/oJATugvdczUdNLb0f3lH0kbL05r4=</dsig:DigestValue>
+        <dsig:DigestValue>cPW1jNGIdEVc1ITy1uVnkLXJgZDiCqGzIkYGUR+wTqw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -119,7 +119,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>W0xOVIALvyFpDCmL4b/k+SZFE8nepantZtuqh3Z/ECE=</dsig:DigestValue>
+      <dsig:DigestValue>+Fxy3ZvJLTpfi43Blpa1GuJQCA7KJfrpzxT97Yhj8CE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="frontend_reservation_log.ldf" size="1376256" writeableType="applicationData">
@@ -128,7 +128,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>hqcHV9BRKWPRdv0tv7XDKhsEQ1jlUpllr8uyqlcelrU=</dsig:DigestValue>
+      <dsig:DigestValue>5IDDPfliDMfz6NUVSv/Ubigh2G2TiFq3Rfz91ASAHXo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Hotel_Manager.exe.config" size="921">

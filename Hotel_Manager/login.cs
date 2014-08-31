@@ -23,22 +23,17 @@ namespace Hotel_Manager
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void signinButton_Click(object sender, EventArgs e)
         {
             try
             {
-                if (verify_login_frontend(metroTextBox1.Text.Trim(), metroTextBox2.Text.Trim()) == true)
+                if (verify_login_frontend(usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
                 {
                     this.Hide();
                     frontend hotel_management = new frontend();
                     hotel_management.Show();
                 }
-                else if (verify_login_kitchen(metroTextBox1.Text.Trim(), metroTextBox2.Text.Trim()) == true)
+                else if (verify_login_kitchen(usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
                 {
                     this.Hide();
                     kitchen kitchen_management = new kitchen();
@@ -57,50 +52,41 @@ namespace Hotel_Manager
 
         }
 
-        private void metroTextBox1_Click(object sender, EventArgs e)
+        private void usernameTextBox_Click(object sender, EventArgs e)
         {
 
-            if (metroTextBox1.Text == string.Empty)
+            if (usernameTextBox.Text == string.Empty)
             {
-                metroLabel1.Visible = true;
+                usernameLabel.Visible = true;
             }
-            if (metroTextBox1.Text != "Username" && metroTextBox1.Text != string.Empty)
+            if (usernameTextBox.Text != "Username" && usernameTextBox.Text != string.Empty)
             {
-                metroLabel1.Visible = false;
-            }
-        }
-        private void metroTextBox2_Click(object sender, EventArgs e)
-        {
-            if (metroTextBox2.Text == string.Empty)
-            {
-                metroLabel2.Visible = true;
-            }
-            if (metroTextBox2.Text != "Password" && metroTextBox2.Text != string.Empty)
-            {
-                metroLabel2.Visible = false;
+                usernameLabel.Visible = false;
             }
         }
-   
-        private void metroLabel1_Click(object sender, EventArgs e)
+        private void passwordTextBox_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void metroLabel2_Click(object sender, EventArgs e)
-        {
-
+            if (passwordTextBox.Text == string.Empty)
+            {
+                passwordLabel.Visible = true;
+            }
+            if (passwordTextBox.Text != "Password" && passwordTextBox.Text != string.Empty)
+            {
+                passwordLabel.Visible = false;
+            }
         }
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
             base.OnMouseDown(e);
-            if (!metroLabel1.Bounds.Contains(e.Location) && metroTextBox1.Text == string.Empty)
+            if (!usernameLabel.Bounds.Contains(e.Location) && usernameTextBox.Text == string.Empty)
             {
-                metroLabel1.Visible = false;
+                usernameLabel.Visible = false;
             }
-            if (!metroLabel2.Bounds.Contains(e.Location) && metroTextBox2.Text == string.Empty)
+            if (!passwordLabel.Bounds.Contains(e.Location) && passwordTextBox.Text == string.Empty)
             {
-                metroLabel2.Visible = false;
+                passwordLabel.Visible = false;
             }
 
         }
@@ -170,10 +156,12 @@ namespace Hotel_Manager
             Application.Exit();
         }
 
-        private void metroButton9_Click(object sender, EventArgs e)
+        private void LicenseCallButton_Click(object sender, EventArgs e)
         {
             License open_license = new License();
             open_license.ShowDialog();
         }
+
+
     }
 }

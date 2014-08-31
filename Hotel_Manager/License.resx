@@ -117,14 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="metroLabel1.Text" xml:space="preserve">
+  <data name="LicenseText.Text" xml:space="preserve">
     <value>This program is written for educational purposes only. 
  
 Open Source frameworks:
 Modern UI - most of the metro UI implimented using this open source framework
 license under: MIT - http://github.com/viperneo
 
-Twilio - this framework by twilio was used to send the Message to phone number regarding
+Twilio - this framework by twilio was used to send the Message to phone number 
+regarding
 customer reservation. 
 https://www.twilio.com/
 
