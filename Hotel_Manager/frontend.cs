@@ -306,7 +306,7 @@ namespace Hotel_Manager
               "', '" + CardType + "','" + paymentCardNumber + "','" + MM_YY_Of_Card + "','" + CVC_Of_Card + "', '" + dateTimePicker1.Text + "', '" + dateTimePicker2.Text + "','" + checkin +
               "', '" + breakfast + "','" + lunch + "','" + dinner + "', '" + foodStatus + "', '" + Convert.ToInt32(cleaning) + "', '" + Convert.ToInt32(towel) + "', '" + Convert.ToInt32(surprise) + "','" + foodBill + "');";
             query += "SELECT CAST(scope_identity() AS int)";
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
 
             SqlCommand query_table = new SqlCommand(query, connection);
             try
@@ -416,7 +416,7 @@ namespace Hotel_Manager
             if (primartyID > 1000)
             {
                 string query = "delete from reservation where Id = '" + primartyID + "'";
-                SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+                SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
 
                 SqlCommand query_table = new SqlCommand(query, connection);
                 SqlDataReader reader;
@@ -460,7 +460,7 @@ namespace Hotel_Manager
               "', card_type ='" + CardType + "', card_number='" + paymentCardNumber + "',card_exp='" + MM_YY_Of_Card + "', card_cvc='" + CVC_Of_Card + "', arrival_time='" + dateTimePicker1.Text + "', leaving_time='" + dateTimePicker2.Text + "', break_fast='" + breakfast +
               "', check_in='" + checkin + "', lunch='" + lunch + "', dinner='" + dinner + "', supply_status='" + foodStatus + "',cleaning='" + Convert.ToInt32(cleaning) + "',towel='" + Convert.ToInt32(towel) + "',s_surprise='" + Convert.ToInt32(surprise) + "',food_bill='" + foodBill + "' WHERE Id = '" + primartyID + "';";
 
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
 
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
@@ -514,7 +514,7 @@ namespace Hotel_Manager
           //  MessageBox.Show("ID+" + getQuerystring);
             string query = "Select * from reservation where Id= '" + getQuerystring + "'";
 
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
             try
@@ -678,7 +678,7 @@ namespace Hotel_Manager
         private void ComboBoxItemsFromDataBase()
         {
             string query = "Select * from reservation";
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
 
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
@@ -705,7 +705,7 @@ namespace Hotel_Manager
 
         private void LoadForDataGridView()
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\documents\visual studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
             SqlCommand query = new SqlCommand("Select * from reservation", connection);
             try
             {
@@ -749,7 +749,7 @@ namespace Hotel_Manager
         {
             listBox1.Items.Clear();
             string query = "Select * from reservation where check_in = '" + "True" + "';";
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
 
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
@@ -786,9 +786,9 @@ namespace Hotel_Manager
         private void ReservedRoom()
         {
             listBox2.Items.Clear();
-            string query = "Select * from reservation where check_in = '" + "False" + "';";
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
 
+            string query = "Select * from reservation where check_in = '" + "False" + "';";
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
             try
@@ -831,9 +831,10 @@ namespace Hotel_Manager
             List<string> TakenRoomList = new List<string>();
 
             string query = "Select room_number from reservation where check_in = '" + "True" + "';";
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
 
             SqlCommand query_table = new SqlCommand(query, connection);
+
             SqlDataReader reader;
             try
             {
@@ -872,8 +873,8 @@ namespace Hotel_Manager
         private void bindingData()
             
         {
-            
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
+
+            SqlConnection con = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
             con.Open();
             string query = "Select * from reservation where Id like '%" + metroTextBox10.Text + "%' OR last_name like '%" + metroTextBox10.Text + "%' OR first_name like '%" + metroTextBox10.Text + "%' OR gender like '%" + metroTextBox10.Text + "%' OR state like '%" + metroTextBox10.Text + "%' OR city like '%" + metroTextBox10.Text + "%' OR room_number like '%" + metroTextBox10.Text + "%' OR room_type like '%" + metroTextBox10.Text + "%' OR email_address like '%" + metroTextBox10.Text + "%' OR phone_number like '%" + metroTextBox10.Text + "%'";
            
@@ -889,8 +890,7 @@ namespace Hotel_Manager
 
         private void metroButton8_Click_1(object sender, EventArgs e)
         {
-          //  SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
-            SqlConnection con = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+          SqlConnection con = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
             
             con.Open();
             string query = "Select * from reservation where Id like '%" + metroTextBox10.Text + "%' OR last_name like '%" + metroTextBox10.Text + "%' OR first_name like '%" + metroTextBox10.Text + "%' OR gender like '%" + metroTextBox10.Text + "%' OR state like '%" + metroTextBox10.Text + "%' OR city like '%" + metroTextBox10.Text + "%' OR room_number like '%" + metroTextBox10.Text + "%' OR room_type like '%" + metroTextBox10.Text + "%' OR email_address like '%" + metroTextBox10.Text + "%' OR phone_number like '%" + metroTextBox10.Text + "%'";

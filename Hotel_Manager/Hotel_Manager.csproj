@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoDB.cs" />
     <Compile Include="FinalizePayment.cs">
       <SubType>Form</SubType>
     </Compile>
