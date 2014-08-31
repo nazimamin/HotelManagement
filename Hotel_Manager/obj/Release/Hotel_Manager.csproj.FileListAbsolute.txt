@@ -1,0 +1,60 @@
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\frontend_reservation.mdf
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\frontend_reservation_log.ldf
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\login_manager.mdf
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\login_manager_log.ldf
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.exe.config
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.exe.manifest
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.application
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.exe
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.pdb
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\MetroFramework.Design.dll
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\MetroFramework.dll
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\RestSharp.dll
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Twilio.Api.dll
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\RestSharp.xml
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Twilio.Api.pdb
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\bin\Release\Twilio.Api.xml
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.FinalizePayment.resources
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.FoodMenu.resources
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.kitchen.resources
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.login.resources
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.frontend.resources
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.Properties.Resources.resources
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.csproj.GenerateResource.Cache
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.exe.manifest
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.application
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.exe
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.pdb
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\Documents\Visual Studio 2013\Projects\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.License.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.exe.config
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.exe
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.pdb
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\frontend_reservation.mdf
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\frontend_reservation_log.ldf
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\login_manager.mdf
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\login_manager_log.ldf
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.exe.manifest
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.application
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.exe
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Hotel_Manager.pdb
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\MetroFramework.Design.dll
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\MetroFramework.dll
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\RestSharp.dll
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Twilio.Api.dll
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\RestSharp.xml
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Twilio.Api.pdb
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\bin\Release\Twilio.Api.xml
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.FinalizePayment.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.FoodMenu.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.kitchen.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.License.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.login.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.frontend.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.Properties.Resources.resources
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.csproj.GenerateResource.Cache
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.exe.manifest
+C:\Users\Nazim\workspace\Hotel_Manager\Hotel_Manager\obj\Release\Hotel_Manager.application
