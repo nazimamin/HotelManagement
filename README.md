@@ -1,4 +1,4 @@
-secret-shame-csharp
+secret-shame-csharp [HMS]- WIP
 ===================
 
 This is a simple HotelManagement tool that utilizes data from/to the sql database.
