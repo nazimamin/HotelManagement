@@ -20,20 +20,18 @@ namespace Hotel_Manager
         {
             InitializeComponent();
             CenterToScreen();
-
         }
-
         private void signinButton_Click(object sender, EventArgs e)
         {
             try
             {
-                if (verify_login_frontend(usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
+                if (verifier("frontend".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
                 {
                     this.Hide();
                     frontend hotel_management = new frontend();
                     hotel_management.Show();
                 }
-                else if (verify_login_kitchen(usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
+                else if (verifier("kitchen".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
                 {
                     this.Hide();
                     kitchen kitchen_management = new kitchen();
@@ -48,8 +46,6 @@ namespace Hotel_Manager
             {
                 MetroFramework.MetroMessageBox.Show(this, ex.ToString(), "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
             }
-
-
         }
 
         private void usernameTextBox_Click(object sender, EventArgs e)
@@ -91,44 +87,13 @@ namespace Hotel_Manager
 
         }
 
-        //verifier
-        public bool verify_login_frontend(string username, string password)
+        public bool verifier(string tableName, string username, string password)
         {
-
             bool success = false;
-            string sql = "SELECT* FROM  frontend WHERE user_name=@userName AND pass_word=@password";
+            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.loginConnectionString);
+            string sql = "SELECT* FROM "  +tableName+ " WHERE user_name=@userName AND pass_word=@password";
             try
             {
-                SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.loginConnectionString);
-                SqlCommand sqlCommand = new SqlCommand(sql, connection);
-                sqlCommand.CommandText = sql;
-                SqlParameter UsernameParametar = new SqlParameter("@username", SqlDbType.VarChar);
-                SqlParameter PassParametar = new SqlParameter("@password", SqlDbType.VarChar);
-                sqlCommand.Parameters.Add(UsernameParametar);
-                sqlCommand.Parameters.Add(PassParametar);
-                UsernameParametar.Value = username;
-                PassParametar.Value = password;
-                connection.Open();
-                SqlDataReader sqlReader = sqlCommand.ExecuteReader();
-
-                if (sqlReader.HasRows)
-                    success = true;
-                connection.Close();
-            }
-            catch (Exception e)
-            {
-                MetroFramework.MetroMessageBox.Show(this, e.ToString(), "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-            }
-            return success;
-        }
-        public bool verify_login_kitchen(string username, string password)
-        {
-
-            bool success = false;
-            string sql = "SELECT* FROM  kitchen WHERE user_name=@userName AND pass_word=@password";
-            try
-            {
-                SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.loginConnectionString);
                 SqlCommand sqlCommand = new SqlCommand(sql, connection);
                 sqlCommand.CommandText = sql;
                 SqlParameter UsernameParametar = new SqlParameter("@username", SqlDbType.VarChar);
@@ -161,7 +126,5 @@ namespace Hotel_Manager
             License open_license = new License();
             open_license.ShowDialog();
         }
-
-
     }
 }

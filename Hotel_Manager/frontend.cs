@@ -103,7 +103,6 @@ namespace Hotel_Manager
         private int lunch = 0; private int breakfast = 0; private int dinner = 0;
         private string cleaning; private string towel;
         private string surprise;
-        private string connectionString;
 
         private void MainTab_Load(object sender, EventArgs e)
         {
