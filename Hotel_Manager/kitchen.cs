@@ -15,27 +15,24 @@ namespace Hotel_Manager
 {
     public partial class kitchen : MetroForm
     {
-        public kitchen()
-        {
-            InitializeComponent();
-
-        }
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Nazim\documents\visual studio 2013\Projects\Hotel_Manager\Hotel_Manager\frontend_reservation.mdf;Integrated Security=True");
-        private void kitchen_Load(object sender, EventArgs e)
-        {
-            LoadForDataGridView();
-            listBoxFromDataBase();
-        }
-
-        private void kitchen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
         string cleaning, towel, surprise;
         int breakfast, lunch, dinner, foodBill;
         public Int32 primaryID;
         double totalBill;
         bool supply_status = false;
+
+
+        public kitchen()
+        {
+            InitializeComponent();
+
+        }
+        SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+        private void kitchen_Load(object sender, EventArgs e)
+        {
+            LoadForDataGridView();
+            listBoxFromDataBase();
+        }
 
         private void LoadForDataGridView()
         {
@@ -68,32 +65,19 @@ namespace Hotel_Manager
             }
         }
 
-        private void metroTabPage1_Click(object sender, EventArgs e)
+        private void resetEntries(Control controls)
         {
-
-        }
-        private void resetEntries()
-        {
-            Action<Control.ControlCollection> func = null;
-
-            func = (controls) =>
+            foreach (Control control in controls.Controls)
             {
-                foreach (Control control in controls)
+                if (control is TextBox)
                 {
-                    if (control is TextBox)
-                    {
-                        (control as TextBox).Clear();
-                    }
-                    else
-                        func(control.Controls);
-                    if (control is CheckBox)
-                    {
-                        (control as CheckBox).Checked = false;
-                    }
+                    ((TextBox)control).Clear();
                 }
-            };
-
-            func(Controls);
+                if (control.HasChildren)
+                {
+                    resetEntries(control);
+                }
+            }
 
         }
         private void listBoxFromDataBase()
@@ -144,7 +128,7 @@ namespace Hotel_Manager
             if (connection.State != ConnectionState.Open)
             {
                 connection.Close();
-                resetEntries();
+                resetEntries(this);
                 string getQuerystring = listBox1.Text.Substring(0, 4).Replace(" ", string.Empty);
                 //MessageBox.Show("ID+" + getQuerystring);
                 string query = "Select * from reservation where Id= '" + getQuerystring + "'";
@@ -353,10 +337,9 @@ namespace Hotel_Manager
             metroCheckBox3.Text = "Surprised";
             supply_status = true;
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void kitchen_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
         
     }
