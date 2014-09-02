@@ -25,13 +25,13 @@ namespace Hotel_Manager
         {
             try
             {
-                if (verifier("frontend".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
+                if (verifier("frontend".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
                 {
                     this.Hide();
                     frontend hotel_management = new frontend();
                     hotel_management.Show();
                 }
-                else if (verifier("kitchen".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()) == true)
+                else if (verifier("kitchen".Trim(), usernameTextBox.Text.Trim(), passwordTextBox.Text.Trim()))
                 {
                     this.Hide();
                     kitchen kitchen_management = new kitchen();

@@ -40,7 +40,8 @@ namespace Hotel_Manager
             {
                 connection.Close();
 
-                SqlCommand query = new SqlCommand("Select ID, first_name, last_name, phone_number, room_type, room_floor, room_number, break_fast, lunch, dinner, cleaning, towel, s_surprise, supply_status, food_bill from reservation where check_in = '" + "True" + "' AND supply_status= '" + "False" + "'", connection);
+                string queryString = "Select ID, first_name, last_name, phone_number, room_type, room_floor, room_number, break_fast, lunch, dinner, cleaning, towel, s_surprise, supply_status, food_bill from reservation where check_in = '" + "True" + "' AND supply_status= '" + "False" + "'";
+                SqlCommand query = new SqlCommand(queryString, connection);
                 try
                 {
                     connection.Open();
@@ -50,7 +51,7 @@ namespace Hotel_Manager
 
                     BindingSource bindingSource = new BindingSource();
                     bindingSource.DataSource = dataTable;
-                    dataGridView1.DataSource = bindingSource;
+                    overviewDataGridView.DataSource = bindingSource;
                     dataAdapter.Update(dataTable);
                     connection.Close();
                 }
@@ -83,7 +84,7 @@ namespace Hotel_Manager
         private void listBoxFromDataBase()
         {
 
-            listBox1.Items.Clear();
+            queueListBox.Items.Clear();
             if (connection.State != ConnectionState.Open)
             {
                 connection.Close();
@@ -102,7 +103,7 @@ namespace Hotel_Manager
                         string first_name = reader["first_name"].ToString();
                         string last_name = reader["last_name"].ToString();
                         string phone_number = reader["phone_number"].ToString();
-                        listBox1.Items.Add(ID + "  | " + first_name + "  " + last_name + " | " + phone_number);
+                        queueListBox.Items.Add(ID + "  | " + first_name + "  " + last_name + " | " + phone_number);
 
                     }
                     connection.Close();
@@ -118,18 +119,13 @@ namespace Hotel_Manager
             }
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void queueListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (connection.State != ConnectionState.Open)
             {
                 connection.Close();
                 resetEntries(this);
-                string getQuerystring = listBox1.Text.Substring(0, 4).Replace(" ", string.Empty);
+                string getQuerystring = queueListBox.Text.Substring(0, 4).Replace(" ", string.Empty);
                 //MessageBox.Show("ID+" + getQuerystring);
                 string query = "Select * from reservation where Id= '" + getQuerystring + "'";
 
@@ -160,20 +156,20 @@ namespace Hotel_Manager
                         if (_cleaning == "True")
                         {
                             cleaning = "1";
-                            metroCheckBox4.Checked = true;
+                            cleaningCheckBox.Checked = true;
                         }
                         else { cleaning = "0"; }
 
                         if (_towel == "True")
                         {
                             towel = "1";
-                            metroCheckBox5.Checked = true;
+                            towelCheckBox.Checked = true;
                         }
                         else { towel = "0"; }
                         if (_surprise == "True")
                         {
                             surprise = "1";
-                            metroCheckBox3.Checked = true;
+                            surpriseCheckBox.Checked = true;
                         }
                         else
                         {
@@ -192,51 +188,51 @@ namespace Hotel_Manager
                         if (isNum)
                         {
                             lunch = Int32.Parse(_lunch);
-                            metroTextBox8.Text = Convert.ToString(lunch);
+                            lunchTextBox.Text = Convert.ToString(lunch);
                         }
                         else
                         {
                             lunch = 0;
-                            metroTextBox8.Text = "NONE";
+                            lunchTextBox.Text = "NONE";
                         }
                         isNum = double.TryParse(_breakfast, out Num);
                         if (isNum)
                         {
                             breakfast = Int32.Parse(_breakfast);
-                            metroTextBox7.Text = Convert.ToString(breakfast);
+                            breakfastTextBox.Text = Convert.ToString(breakfast);
                         }
                         else
                         {
                             breakfast = 0;
-                            metroTextBox7.Text = "NONE";
+                            breakfastTextBox.Text = "NONE";
                         }
                         isNum = double.TryParse(_dinner, out Num);
                         if (isNum)
                         {
                             dinner = Int32.Parse(_dinner);
-                            metroTextBox9.Text = Convert.ToString(dinner);
+                            dinnerTextBox.Text = Convert.ToString(dinner);
                         }
                         else
                         {
                             dinner = 0;
-                            metroTextBox9.Text = "NONE";
+                            dinnerTextBox.Text = "NONE";
                         }
 
                         if (supply_status == "True")
                         {
-                            metroCheckBox2.Checked = true;
+                            supplyCheckBox.Checked = true;
                         }
                         else
                         {
-                            metroCheckBox2.Checked = false;
+                            supplyCheckBox.Checked = false;
                         }
 
-                        metroTextBox1.Text = first_name;
-                        metroTextBox2.Text = last_name;
-                        metroTextBox3.Text = phone_number;
-                        metroTextBox4.Text = room_type;
-                        metroTextBox6.Text = room_floor;
-                        metroTextBox5.Text = room_number;
+                        firstNameTextBox.Text = first_name;
+                        lastNameTextBox.Text = last_name;
+                        phoneNTextBox.Text = phone_number;
+                        roomTypeTextBox.Text = room_type;
+                        floorNTextBox.Text = room_floor;
+                        roomNTextBox.Text = room_number;
                         totalBill = Convert.ToDouble(total_bill);
                         foodBill = Convert.ToInt32(foodBillD);
                         totalBill -= foodBill;
@@ -256,7 +252,7 @@ namespace Hotel_Manager
             }
         }
 
-        private void metroButton4_Click(object sender, EventArgs e)
+        private void foodSelectionButton_Click(object sender, EventArgs e)
         {
 
             FoodMenu food_menu = new FoodMenu();
@@ -282,7 +278,7 @@ namespace Hotel_Manager
             foodBill += (bfast + Lnch + di_ner);
         }
 
-        private void metroButton1_Click_1(object sender, EventArgs e)
+        private void updateButton_Click(object sender, EventArgs e)
         {
             if (connection.State != ConnectionState.Open)
             {
@@ -327,14 +323,14 @@ namespace Hotel_Manager
             }
         }
 
-        private void metroCheckBox2_CheckedChanged(object sender, EventArgs e)
+        private void supplyCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            metroCheckBox4.Checked = false;
-            metroCheckBox4.Text = "Cleaned";
-            metroCheckBox5.Checked = false;
-            metroCheckBox5.Text = "Toweled";
-            metroCheckBox3.Checked = false;
-            metroCheckBox3.Text = "Surprised";
+            cleaningCheckBox.Checked = false;
+            cleaningCheckBox.Text = "Cleaned";
+            towelCheckBox.Checked = false;
+            towelCheckBox.Text = "Toweled";
+            surpriseCheckBox.Checked = false;
+            surpriseCheckBox.Text = "Surprised";
             supply_status = true;
         }
         private void kitchen_FormClosing(object sender, FormClosingEventArgs e)
