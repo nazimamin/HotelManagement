@@ -15,19 +15,21 @@ namespace Hotel_Manager
 {
     public partial class kitchen : MetroForm
     {
-        string cleaning, towel, surprise;
+        string cleaning, towel, surprise, queryString;
         int breakfast, lunch, dinner, foodBill;
         public Int32 primaryID;
         double totalBill;
         bool supply_status = false;
 
-
+        SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+        SqlCommand query;
+        SqlDataReader reader;
+        
         public kitchen()
         {
             InitializeComponent();
 
         }
-        SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
         private void kitchen_Load(object sender, EventArgs e)
         {
             LoadForDataGridView();
@@ -40,8 +42,8 @@ namespace Hotel_Manager
             {
                 connection.Close();
 
-                string queryString = "Select ID, first_name, last_name, phone_number, room_type, room_floor, room_number, break_fast, lunch, dinner, cleaning, towel, s_surprise, supply_status, food_bill from reservation where check_in = '" + "True" + "' AND supply_status= '" + "False" + "'";
-                SqlCommand query = new SqlCommand(queryString, connection);
+                queryString = "Select ID, first_name, last_name, phone_number, room_type, room_floor, room_number, break_fast, lunch, dinner, cleaning, towel, s_surprise, supply_status, food_bill from reservation where check_in = '" + "True" + "' AND supply_status= '" + "False" + "'";
+                query = new SqlCommand(queryString, connection);
                 try
                 {
                     connection.Open();
@@ -89,14 +91,13 @@ namespace Hotel_Manager
             {
                 connection.Close();
 
-                string query = "Select * from reservation where check_in = '" + "True" + "' AND supply_status='" + "False" + "'";
+                queryString = "Select * from reservation where check_in = '" + "True" + "' AND supply_status='" + "False" + "'";
 
-                SqlCommand query_table = new SqlCommand(query, connection);
-                SqlDataReader reader;
+                query = new SqlCommand(queryString, connection);
                 try
                 {
                     connection.Open();
-                    reader = query_table.ExecuteReader();
+                    reader = query.ExecuteReader();
                     while (reader.Read())
                     {
                         string ID = reader["ID"].ToString();
@@ -127,14 +128,13 @@ namespace Hotel_Manager
                 resetEntries(this);
                 string getQuerystring = queueListBox.Text.Substring(0, 4).Replace(" ", string.Empty);
                 //MessageBox.Show("ID+" + getQuerystring);
-                string query = "Select * from reservation where Id= '" + getQuerystring + "'";
-
-                SqlCommand query_table = new SqlCommand(query, connection);
-                SqlDataReader reader;
+                queryString = "Select * from reservation where Id= '" + getQuerystring + "'";
+                
+                query = new SqlCommand(queryString, connection);
                 try
                 {
                     connection.Open();
-                    reader = query_table.ExecuteReader();
+                    reader = query.ExecuteReader();
                     while (reader.Read())
                     {
                         string ID = reader["Id"].ToString();
@@ -286,26 +286,22 @@ namespace Hotel_Manager
 
                 if (primaryID > 1000)
                 {
-                    string query = "update reservation set total_bill='" + totalBill + foodBill + "', break_fast='" + breakfast + "', lunch= '" + lunch + "', dinner='" + dinner + "', supply_status='" + supply_status + "',cleaning='" + Convert.ToInt32(cleaning) + "',towel='" + Convert.ToInt32(towel) + "',s_surprise='" + Convert.ToInt32(surprise) + "',food_bill='" + foodBill + "' WHERE Id = '" + primaryID + "';";
+                    queryString = "update reservation set total_bill='" + totalBill + foodBill + "', break_fast='" + breakfast + "', lunch= '" + lunch + "', dinner='" + dinner + "', supply_status='" + supply_status + "',cleaning='" + Convert.ToInt32(cleaning) + "',towel='" + Convert.ToInt32(towel) + "',s_surprise='" + Convert.ToInt32(surprise) + "',food_bill='" + foodBill + "' WHERE Id = '" + primaryID + "';";
 
-                    SqlCommand query_table = new SqlCommand(query, connection);
-                    SqlDataReader reader;
+                    query = new SqlCommand(queryString, connection);
                     try
                     {
                         connection.Open();
                         string userID = Convert.ToString(primaryID);
-                        reader = query_table.ExecuteReader();
+                        reader = query.ExecuteReader();
 
                         MetroFramework.MetroMessageBox.Show(this, "Entry successfully updated into database. For the UNIQUE USER ID of: " + "\n\n" +
                         " " + userID, "Report", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
-                        while (reader.Read())
-                        {
-
-                        }
                         connection.Close();
                         listBoxFromDataBase();
                         LoadForDataGridView();
+                        resetEntries(this);
                     }
                     catch (Exception ex)
                     {

@@ -459,7 +459,8 @@ namespace Hotel_Manager
               "', card_type ='" + CardType + "', card_number='" + paymentCardNumber + "',card_exp='" + MM_YY_Of_Card + "', card_cvc='" + CVC_Of_Card + "', arrival_time='" + dateTimePicker1.Text + "', leaving_time='" + dateTimePicker2.Text + "', break_fast='" + breakfast +
               "', check_in='" + checkin + "', lunch='" + lunch + "', dinner='" + dinner + "', supply_status='" + foodStatus + "',cleaning='" + Convert.ToInt32(cleaning) + "',towel='" + Convert.ToInt32(towel) + "',s_surprise='" + Convert.ToInt32(surprise) + "',food_bill='" + foodBill + "' WHERE Id = '" + primartyID + "';";
 
-            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+           // SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\frontend_reservation.mdf;Integrated Security=True");
 
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
@@ -677,7 +678,8 @@ namespace Hotel_Manager
         private void ComboBoxItemsFromDataBase()
         {
             string query = "Select * from reservation";
-            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+            //SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\frontend_reservation.mdf;Integrated Security=True");
 
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;

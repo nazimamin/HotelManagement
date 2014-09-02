@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZGFYuT4KvlNZFpv0PhGaV2lHf2SgyEmjYZsXdpxExhM=</dsig:DigestValue>
+        <dsig:DigestValue>v8LubgP+FffomEhjJ92fraCDI3gz1EzFmYYtLaMv3mQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -119,7 +119,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>+Fxy3ZvJLTpfi43Blpa1GuJQCA7KJfrpzxT97Yhj8CE=</dsig:DigestValue>
+      <dsig:DigestValue>v1WQHhuq3HcSuxDQh+uh+iy9sscbMVcJRxZ47ndQnko=</dsig:DigestValue>
     </hash>
   </file>
   <file name="frontend_reservation_log.ldf" size="1376256" writeableType="applicationData">
@@ -128,7 +128,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>5IDDPfliDMfz6NUVSv/Ubigh2G2TiFq3Rfz91ASAHXo=</dsig:DigestValue>
+      <dsig:DigestValue>bRrmJ1yDhzT9/5Azc6lW1S667/BsLhSDZkJS+jP1mAU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Hotel_Manager.exe.config" size="921">
@@ -146,7 +146,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>KMFg/TgZmOqged8FdHovt+ikKbYeagaoC77/RQUp+FM=</dsig:DigestValue>
+      <dsig:DigestValue>cKh6GvfkZbM97VUnDk0TC5nIZXIXAR3nTQgNdJWq19M=</dsig:DigestValue>
     </hash>
   </file>
   <file name="login_manager_log.ldf" size="802816" writeableType="applicationData">
@@ -155,7 +155,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>XScNna1wfvUJR18RCp719NNyOFrjV2YMmOki1V5oN30=</dsig:DigestValue>
+      <dsig:DigestValue>ivfgXUxP6vrlY+iqNSF9yODomc8p67SSdPF04dyogwE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
