@@ -118,31 +118,31 @@ namespace Hotel_Manager
             {
                 if (breakfast > 0)
                 {
-                    food_menu.metroCheckBox1.Checked = true;
-                    food_menu.metroTextBox1.Text = Convert.ToString(breakfast);
+                    food_menu.breakfastCheckBox.Checked = true;
+                    food_menu.breakfastQTY.Text = Convert.ToString(breakfast);
                 }
                 if (lunch > 0)
                 {
-                    food_menu.metroCheckBox2.Checked = true;
+                    food_menu.lunchCheckBox.Checked = true;
 
-                    food_menu.metroTextBox2.Text = Convert.ToString(lunch);
+                    food_menu.lunchQTY.Text = Convert.ToString(lunch);
                 }
                 if (dinner > 0)
                 {
-                    food_menu.metroCheckBox3.Checked = true;
-                    food_menu.metroTextBox3.Text = Convert.ToString(dinner);
+                    food_menu.dinnerCheckBox.Checked = true;
+                    food_menu.dinnerQTY.Text = Convert.ToString(dinner);
                 }
                 if (cleaning == "1")
                 {
-                    food_menu.metroCheckBox4.Checked = true;
+                    food_menu.cleaningCheckBox.Checked = true;
                 }
                 if (towel == "1")
                 {
-                    food_menu.metroCheckBox5.Checked = true;
+                    food_menu.towelsCheckBox.Checked = true;
                 }
                 if (surprise == "1")
                 {
-                    food_menu.metroCheckBox7.Checked = true;
+                    food_menu.surpriseCheckBox.Checked = true;
                 }
             }
             food_menu.ShowDialog();
@@ -248,11 +248,11 @@ namespace Hotel_Manager
             finalizebil.foodBill = foodBill;
             if (taskFinder)
             {
-                finalizebil.metroComboBox12.SelectedItem = FPayment.Replace(" ", string.Empty);
-                finalizebil.metroTextBox10.Text = FCnumber;
-                finalizebil.metroComboBox1.SelectedItem = FcardExpOne;
-                finalizebil.metroComboBox2.SelectedItem = FcardExpTwo;
-                finalizebil.metroTextBox1.Text = FCardCVC;
+                finalizebil.paymentComboBox.SelectedItem = FPayment.Replace(" ", string.Empty);
+                finalizebil.phoneNComboBox.Text = FCnumber;
+                finalizebil.monthComboBox.SelectedItem = FcardExpOne;
+                finalizebil.yearComboBox.SelectedItem = FcardExpTwo;
+                finalizebil.cvcComboBox.Text = FCardCVC;
             }
 
             finalizebil.ShowDialog();

@@ -29,157 +29,186 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodMenu));
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroCheckBox3 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.foodPanel = new MetroFramework.Controls.MetroPanel();
+            this.dinnerQTY = new MetroFramework.Controls.MetroTextBox();
+            this.lunchQTY = new MetroFramework.Controls.MetroTextBox();
+            this.breakfastQTY = new MetroFramework.Controls.MetroTextBox();
+            this.dinnerPicture = new System.Windows.Forms.PictureBox();
+            this.lunchPicture = new System.Windows.Forms.PictureBox();
+            this.breakfastPicture = new System.Windows.Forms.PictureBox();
+            this.dinnerCheckBox = new MetroFramework.Controls.MetroCheckBox();
+            this.lunchCheckBox = new MetroFramework.Controls.MetroCheckBox();
+            this.breakfastCheckBox = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroCheckBox7 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox5 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox4 = new MetroFramework.Controls.MetroCheckBox();
+            this.needPanel = new MetroFramework.Controls.MetroPanel();
+            this.surpriseCheckBox = new MetroFramework.Controls.MetroCheckBox();
+            this.towelsCheckBox = new MetroFramework.Controls.MetroCheckBox();
+            this.cleaningCheckBox = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroPanel1.SuspendLayout();
-            this.metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.nextButton = new MetroFramework.Controls.MetroButton();
+            this.foodPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dinnerPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lunchPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.breakfastPicture)).BeginInit();
+            this.needPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroPanel1
+            // foodPanel
             // 
-            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.metroPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.metroPanel1.Controls.Add(this.metroTextBox3);
-            this.metroPanel1.Controls.Add(this.metroTextBox2);
-            this.metroPanel1.Controls.Add(this.metroTextBox1);
-            this.metroPanel1.Controls.Add(this.pictureBox3);
-            this.metroPanel1.Controls.Add(this.pictureBox2);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.Controls.Add(this.metroCheckBox3);
-            this.metroPanel1.Controls.Add(this.metroCheckBox2);
-            this.metroPanel1.Controls.Add(this.metroCheckBox1);
-            this.metroPanel1.Controls.Add(this.metroLabel1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(14, 63);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(332, 367);
-            this.metroPanel1.TabIndex = 5;
-            this.metroPanel1.UseCustomBackColor = true;
-            this.metroPanel1.UseCustomForeColor = true;
-            this.metroPanel1.UseStyleColors = true;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
+            this.foodPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.foodPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.foodPanel.Controls.Add(this.dinnerQTY);
+            this.foodPanel.Controls.Add(this.lunchQTY);
+            this.foodPanel.Controls.Add(this.breakfastQTY);
+            this.foodPanel.Controls.Add(this.dinnerPicture);
+            this.foodPanel.Controls.Add(this.lunchPicture);
+            this.foodPanel.Controls.Add(this.breakfastPicture);
+            this.foodPanel.Controls.Add(this.dinnerCheckBox);
+            this.foodPanel.Controls.Add(this.lunchCheckBox);
+            this.foodPanel.Controls.Add(this.breakfastCheckBox);
+            this.foodPanel.Controls.Add(this.metroLabel1);
+            this.foodPanel.HorizontalScrollbarBarColor = true;
+            this.foodPanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.foodPanel.HorizontalScrollbarSize = 10;
+            this.foodPanel.Location = new System.Drawing.Point(14, 63);
+            this.foodPanel.Name = "foodPanel";
+            this.foodPanel.Size = new System.Drawing.Size(332, 367);
+            this.foodPanel.TabIndex = 5;
+            this.foodPanel.UseCustomBackColor = true;
+            this.foodPanel.UseCustomForeColor = true;
+            this.foodPanel.UseStyleColors = true;
+            this.foodPanel.VerticalScrollbarBarColor = true;
+            this.foodPanel.VerticalScrollbarHighlightOnWheel = false;
+            this.foodPanel.VerticalScrollbarSize = 10;
             // 
-            // metroTextBox3
+            // dinnerQTY
             // 
-            this.metroTextBox3.BackColor = System.Drawing.Color.White;
-            this.metroTextBox3.Enabled = false;
-            this.metroTextBox3.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(14, 327);
-            this.metroTextBox3.MaxLength = 32767;
-            this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.PasswordChar = '\0';
-            this.metroTextBox3.PromptText = "Quantity ?";
-            this.metroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox3.SelectedText = "";
-            this.metroTextBox3.Size = new System.Drawing.Size(129, 29);
-            this.metroTextBox3.Style = MetroFramework.MetroColorStyle.White;
-            this.metroTextBox3.TabIndex = 40;
-            this.metroTextBox3.UseCustomBackColor = true;
-            this.metroTextBox3.UseSelectable = true;
+            this.dinnerQTY.BackColor = System.Drawing.Color.White;
+            this.dinnerQTY.Enabled = false;
+            this.dinnerQTY.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.dinnerQTY.Lines = new string[0];
+            this.dinnerQTY.Location = new System.Drawing.Point(14, 327);
+            this.dinnerQTY.MaxLength = 32767;
+            this.dinnerQTY.Name = "dinnerQTY";
+            this.dinnerQTY.PasswordChar = '\0';
+            this.dinnerQTY.PromptText = "Quantity ?";
+            this.dinnerQTY.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dinnerQTY.SelectedText = "";
+            this.dinnerQTY.Size = new System.Drawing.Size(129, 29);
+            this.dinnerQTY.Style = MetroFramework.MetroColorStyle.White;
+            this.dinnerQTY.TabIndex = 40;
+            this.dinnerQTY.UseCustomBackColor = true;
+            this.dinnerQTY.UseSelectable = true;
             // 
-            // metroTextBox2
+            // lunchQTY
             // 
-            this.metroTextBox2.BackColor = System.Drawing.Color.White;
-            this.metroTextBox2.Enabled = false;
-            this.metroTextBox2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(172, 181);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.PromptText = "Quantity ?";
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.Size = new System.Drawing.Size(144, 29);
-            this.metroTextBox2.Style = MetroFramework.MetroColorStyle.White;
-            this.metroTextBox2.TabIndex = 39;
-            this.metroTextBox2.UseCustomBackColor = true;
-            this.metroTextBox2.UseSelectable = true;
+            this.lunchQTY.BackColor = System.Drawing.Color.White;
+            this.lunchQTY.Enabled = false;
+            this.lunchQTY.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.lunchQTY.Lines = new string[0];
+            this.lunchQTY.Location = new System.Drawing.Point(172, 181);
+            this.lunchQTY.MaxLength = 32767;
+            this.lunchQTY.Name = "lunchQTY";
+            this.lunchQTY.PasswordChar = '\0';
+            this.lunchQTY.PromptText = "Quantity ?";
+            this.lunchQTY.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.lunchQTY.SelectedText = "";
+            this.lunchQTY.Size = new System.Drawing.Size(144, 29);
+            this.lunchQTY.Style = MetroFramework.MetroColorStyle.White;
+            this.lunchQTY.TabIndex = 39;
+            this.lunchQTY.UseCustomBackColor = true;
+            this.lunchQTY.UseSelectable = true;
             // 
-            // metroTextBox1
+            // breakfastQTY
             // 
-            this.metroTextBox1.BackColor = System.Drawing.Color.White;
-            this.metroTextBox1.Enabled = false;
-            this.metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(14, 181);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.PromptText = "Quantity ?";
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.Size = new System.Drawing.Size(129, 29);
-            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.White;
-            this.metroTextBox1.TabIndex = 38;
-            this.metroTextBox1.UseCustomBackColor = true;
-            this.metroTextBox1.UseSelectable = true;
+            this.breakfastQTY.BackColor = System.Drawing.Color.White;
+            this.breakfastQTY.Enabled = false;
+            this.breakfastQTY.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.breakfastQTY.Lines = new string[0];
+            this.breakfastQTY.Location = new System.Drawing.Point(14, 181);
+            this.breakfastQTY.MaxLength = 32767;
+            this.breakfastQTY.Name = "breakfastQTY";
+            this.breakfastQTY.PasswordChar = '\0';
+            this.breakfastQTY.PromptText = "Quantity ?";
+            this.breakfastQTY.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.breakfastQTY.SelectedText = "";
+            this.breakfastQTY.Size = new System.Drawing.Size(129, 29);
+            this.breakfastQTY.Style = MetroFramework.MetroColorStyle.White;
+            this.breakfastQTY.TabIndex = 38;
+            this.breakfastQTY.UseCustomBackColor = true;
+            this.breakfastQTY.UseSelectable = true;
             // 
-            // metroCheckBox3
+            // dinnerPicture
             // 
-            this.metroCheckBox3.AutoSize = true;
-            this.metroCheckBox3.BackColor = System.Drawing.Color.Transparent;
-            this.metroCheckBox3.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.metroCheckBox3.Location = new System.Drawing.Point(14, 307);
-            this.metroCheckBox3.Name = "metroCheckBox3";
-            this.metroCheckBox3.Size = new System.Drawing.Size(110, 19);
-            this.metroCheckBox3.TabIndex = 5;
-            this.metroCheckBox3.Text = "Dinner   ($15)";
-            this.metroCheckBox3.UseCustomBackColor = true;
-            this.metroCheckBox3.UseSelectable = true;
-            this.metroCheckBox3.CheckedChanged += new System.EventHandler(this.metroCheckBox3_CheckedChanged);
+            this.dinnerPicture.Image = ((System.Drawing.Image)(resources.GetObject("dinnerPicture.Image")));
+            this.dinnerPicture.Location = new System.Drawing.Point(14, 226);
+            this.dinnerPicture.Name = "dinnerPicture";
+            this.dinnerPicture.Size = new System.Drawing.Size(129, 75);
+            this.dinnerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dinnerPicture.TabIndex = 8;
+            this.dinnerPicture.TabStop = false;
             // 
-            // metroCheckBox2
+            // lunchPicture
             // 
-            this.metroCheckBox2.AutoSize = true;
-            this.metroCheckBox2.BackColor = System.Drawing.Color.Transparent;
-            this.metroCheckBox2.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.metroCheckBox2.Location = new System.Drawing.Point(172, 156);
-            this.metroCheckBox2.Name = "metroCheckBox2";
-            this.metroCheckBox2.Size = new System.Drawing.Size(106, 19);
-            this.metroCheckBox2.TabIndex = 4;
-            this.metroCheckBox2.Text = "Lunch   ($15)";
-            this.metroCheckBox2.UseCustomBackColor = true;
-            this.metroCheckBox2.UseSelectable = true;
-            this.metroCheckBox2.CheckedChanged += new System.EventHandler(this.metroCheckBox2_CheckedChanged);
+            this.lunchPicture.Image = ((System.Drawing.Image)(resources.GetObject("lunchPicture.Image")));
+            this.lunchPicture.Location = new System.Drawing.Point(172, 55);
+            this.lunchPicture.Name = "lunchPicture";
+            this.lunchPicture.Size = new System.Drawing.Size(144, 92);
+            this.lunchPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lunchPicture.TabIndex = 7;
+            this.lunchPicture.TabStop = false;
             // 
-            // metroCheckBox1
+            // breakfastPicture
             // 
-            this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.metroCheckBox1.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.metroCheckBox1.Location = new System.Drawing.Point(14, 156);
-            this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(120, 19);
-            this.metroCheckBox1.TabIndex = 3;
-            this.metroCheckBox1.Text = "Break Fast  ($7)";
-            this.metroCheckBox1.UseCustomBackColor = true;
-            this.metroCheckBox1.UseSelectable = true;
-            this.metroCheckBox1.CheckedChanged += new System.EventHandler(this.metroCheckBox1_CheckedChanged);
+            this.breakfastPicture.Image = ((System.Drawing.Image)(resources.GetObject("breakfastPicture.Image")));
+            this.breakfastPicture.Location = new System.Drawing.Point(14, 55);
+            this.breakfastPicture.Name = "breakfastPicture";
+            this.breakfastPicture.Size = new System.Drawing.Size(129, 92);
+            this.breakfastPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.breakfastPicture.TabIndex = 6;
+            this.breakfastPicture.TabStop = false;
+            // 
+            // dinnerCheckBox
+            // 
+            this.dinnerCheckBox.AutoSize = true;
+            this.dinnerCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.dinnerCheckBox.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.dinnerCheckBox.Location = new System.Drawing.Point(14, 307);
+            this.dinnerCheckBox.Name = "dinnerCheckBox";
+            this.dinnerCheckBox.Size = new System.Drawing.Size(110, 19);
+            this.dinnerCheckBox.TabIndex = 5;
+            this.dinnerCheckBox.Text = "Dinner   ($15)";
+            this.dinnerCheckBox.UseCustomBackColor = true;
+            this.dinnerCheckBox.UseSelectable = true;
+            this.dinnerCheckBox.CheckedChanged += new System.EventHandler(this.dinnerCheckBox_CheckedChanged);
+            // 
+            // lunchCheckBox
+            // 
+            this.lunchCheckBox.AutoSize = true;
+            this.lunchCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.lunchCheckBox.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.lunchCheckBox.Location = new System.Drawing.Point(172, 156);
+            this.lunchCheckBox.Name = "lunchCheckBox";
+            this.lunchCheckBox.Size = new System.Drawing.Size(106, 19);
+            this.lunchCheckBox.TabIndex = 4;
+            this.lunchCheckBox.Text = "Lunch   ($15)";
+            this.lunchCheckBox.UseCustomBackColor = true;
+            this.lunchCheckBox.UseSelectable = true;
+            this.lunchCheckBox.CheckedChanged += new System.EventHandler(this.lunchCheckBox_CheckedChanged);
+            // 
+            // breakfastCheckBox
+            // 
+            this.breakfastCheckBox.AutoSize = true;
+            this.breakfastCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.breakfastCheckBox.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.breakfastCheckBox.Location = new System.Drawing.Point(14, 156);
+            this.breakfastCheckBox.Name = "breakfastCheckBox";
+            this.breakfastCheckBox.Size = new System.Drawing.Size(120, 19);
+            this.breakfastCheckBox.TabIndex = 3;
+            this.breakfastCheckBox.Text = "Break Fast  ($7)";
+            this.breakfastCheckBox.UseCustomBackColor = true;
+            this.breakfastCheckBox.UseSelectable = true;
+            this.breakfastCheckBox.CheckedChanged += new System.EventHandler(this.breakfastCheckBox_CheckedChanged);
             // 
             // metroLabel1
             // 
@@ -192,79 +221,67 @@
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Food Selection";
             this.metroLabel1.UseCustomBackColor = true;
-            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
-            // metroPanel2
+            // needPanel
             // 
-            this.metroPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.metroPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.metroPanel2.Controls.Add(this.metroCheckBox7);
-            this.metroPanel2.Controls.Add(this.metroCheckBox5);
-            this.metroPanel2.Controls.Add(this.metroCheckBox4);
-            this.metroPanel2.Controls.Add(this.metroLabel2);
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(355, 63);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(164, 326);
-            this.metroPanel2.TabIndex = 6;
-            this.metroPanel2.UseCustomBackColor = true;
-            this.metroPanel2.UseCustomForeColor = true;
-            this.metroPanel2.UseStyleColors = true;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            this.metroPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel2_Paint);
+            this.needPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.needPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.needPanel.Controls.Add(this.surpriseCheckBox);
+            this.needPanel.Controls.Add(this.towelsCheckBox);
+            this.needPanel.Controls.Add(this.cleaningCheckBox);
+            this.needPanel.Controls.Add(this.metroLabel2);
+            this.needPanel.HorizontalScrollbarBarColor = true;
+            this.needPanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.needPanel.HorizontalScrollbarSize = 10;
+            this.needPanel.Location = new System.Drawing.Point(355, 63);
+            this.needPanel.Name = "needPanel";
+            this.needPanel.Size = new System.Drawing.Size(164, 326);
+            this.needPanel.TabIndex = 6;
+            this.needPanel.UseCustomBackColor = true;
+            this.needPanel.UseCustomForeColor = true;
+            this.needPanel.UseStyleColors = true;
+            this.needPanel.VerticalScrollbarBarColor = true;
+            this.needPanel.VerticalScrollbarHighlightOnWheel = false;
+            this.needPanel.VerticalScrollbarSize = 10;
             // 
-            // metroButton1
+            // surpriseCheckBox
             // 
-            this.metroButton1.Location = new System.Drawing.Point(355, 396);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(164, 34);
-            this.metroButton1.TabIndex = 45;
-            this.metroButton1.Text = "Next";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.surpriseCheckBox.AutoSize = true;
+            this.surpriseCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.surpriseCheckBox.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.surpriseCheckBox.Location = new System.Drawing.Point(18, 128);
+            this.surpriseCheckBox.Name = "surpriseCheckBox";
+            this.surpriseCheckBox.Size = new System.Drawing.Size(131, 19);
+            this.surpriseCheckBox.TabIndex = 44;
+            this.surpriseCheckBox.Text = "Sweetest surprise";
+            this.surpriseCheckBox.UseCustomBackColor = true;
+            this.surpriseCheckBox.UseSelectable = true;
             // 
-            // metroCheckBox7
+            // towelsCheckBox
             // 
-            this.metroCheckBox7.AutoSize = true;
-            this.metroCheckBox7.BackColor = System.Drawing.Color.Transparent;
-            this.metroCheckBox7.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.metroCheckBox7.Location = new System.Drawing.Point(18, 128);
-            this.metroCheckBox7.Name = "metroCheckBox7";
-            this.metroCheckBox7.Size = new System.Drawing.Size(131, 19);
-            this.metroCheckBox7.TabIndex = 44;
-            this.metroCheckBox7.Text = "Sweetest surprise";
-            this.metroCheckBox7.UseCustomBackColor = true;
-            this.metroCheckBox7.UseSelectable = true;
+            this.towelsCheckBox.AutoSize = true;
+            this.towelsCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.towelsCheckBox.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.towelsCheckBox.Location = new System.Drawing.Point(18, 91);
+            this.towelsCheckBox.Name = "towelsCheckBox";
+            this.towelsCheckBox.Size = new System.Drawing.Size(66, 19);
+            this.towelsCheckBox.TabIndex = 42;
+            this.towelsCheckBox.Text = "Towels";
+            this.towelsCheckBox.UseCustomBackColor = true;
+            this.towelsCheckBox.UseSelectable = true;
             // 
-            // metroCheckBox5
+            // cleaningCheckBox
             // 
-            this.metroCheckBox5.AutoSize = true;
-            this.metroCheckBox5.BackColor = System.Drawing.Color.Transparent;
-            this.metroCheckBox5.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.metroCheckBox5.Location = new System.Drawing.Point(18, 91);
-            this.metroCheckBox5.Name = "metroCheckBox5";
-            this.metroCheckBox5.Size = new System.Drawing.Size(66, 19);
-            this.metroCheckBox5.TabIndex = 42;
-            this.metroCheckBox5.Text = "Towels";
-            this.metroCheckBox5.UseCustomBackColor = true;
-            this.metroCheckBox5.UseSelectable = true;
-            // 
-            // metroCheckBox4
-            // 
-            this.metroCheckBox4.AutoSize = true;
-            this.metroCheckBox4.BackColor = System.Drawing.Color.Transparent;
-            this.metroCheckBox4.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.metroCheckBox4.Location = new System.Drawing.Point(18, 55);
-            this.metroCheckBox4.Name = "metroCheckBox4";
-            this.metroCheckBox4.Size = new System.Drawing.Size(78, 19);
-            this.metroCheckBox4.TabIndex = 41;
-            this.metroCheckBox4.Text = "Cleaning";
-            this.metroCheckBox4.UseCustomBackColor = true;
-            this.metroCheckBox4.UseSelectable = true;
+            this.cleaningCheckBox.AutoSize = true;
+            this.cleaningCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.cleaningCheckBox.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.cleaningCheckBox.Location = new System.Drawing.Point(18, 55);
+            this.cleaningCheckBox.Name = "cleaningCheckBox";
+            this.cleaningCheckBox.Size = new System.Drawing.Size(78, 19);
+            this.cleaningCheckBox.TabIndex = 41;
+            this.cleaningCheckBox.Text = "Cleaning";
+            this.cleaningCheckBox.UseCustomBackColor = true;
+            this.cleaningCheckBox.UseSelectable = true;
             // 
             // metroLabel2
             // 
@@ -278,80 +295,58 @@
             this.metroLabel2.Text = "Special needs";
             this.metroLabel2.UseCustomBackColor = true;
             // 
-            // pictureBox3
+            // nextButton
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(14, 226);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(129, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(172, 55);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 92);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.nextButton.Location = new System.Drawing.Point(355, 396);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(164, 34);
+            this.nextButton.TabIndex = 45;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseSelectable = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // FoodMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 442);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.metroPanel2);
-            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.nextButton);
+            this.Controls.Add(this.needPanel);
+            this.Controls.Add(this.foodPanel);
             this.MaximizeBox = false;
             this.Name = "FoodMenu";
             this.Resizable = false;
             this.ShowInTaskbar = false;
             this.Text = "Food and Menu";
-            this.Load += new System.EventHandler(this.FoodMenu_Load);
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
-            this.metroPanel2.ResumeLayout(false);
-            this.metroPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.foodPanel.ResumeLayout(false);
+            this.foodPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dinnerPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lunchPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.breakfastPicture)).EndInit();
+            this.needPanel.ResumeLayout(false);
+            this.needPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroPanel foodPanel;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        public MetroFramework.Controls.MetroTextBox metroTextBox1;
-        public MetroFramework.Controls.MetroTextBox metroTextBox3;
-        public MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private System.Windows.Forms.PictureBox dinnerPicture;
+        private System.Windows.Forms.PictureBox lunchPicture;
+        private System.Windows.Forms.PictureBox breakfastPicture;
+        public MetroFramework.Controls.MetroTextBox breakfastQTY;
+        public MetroFramework.Controls.MetroTextBox dinnerQTY;
+        public MetroFramework.Controls.MetroTextBox lunchQTY;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        public MetroFramework.Controls.MetroCheckBox metroCheckBox3;
-        public MetroFramework.Controls.MetroCheckBox metroCheckBox2;
-        public MetroFramework.Controls.MetroCheckBox metroCheckBox1;
-        public MetroFramework.Controls.MetroCheckBox metroCheckBox7;
-        public MetroFramework.Controls.MetroCheckBox metroCheckBox5;
-        public MetroFramework.Controls.MetroCheckBox metroCheckBox4;
-        public MetroFramework.Controls.MetroPanel metroPanel2;
-        public MetroFramework.Controls.MetroButton metroButton1;
+        public MetroFramework.Controls.MetroCheckBox dinnerCheckBox;
+        public MetroFramework.Controls.MetroCheckBox lunchCheckBox;
+        public MetroFramework.Controls.MetroCheckBox breakfastCheckBox;
+        public MetroFramework.Controls.MetroCheckBox surpriseCheckBox;
+        public MetroFramework.Controls.MetroCheckBox towelsCheckBox;
+        public MetroFramework.Controls.MetroCheckBox cleaningCheckBox;
+        public MetroFramework.Controls.MetroPanel needPanel;
+        public MetroFramework.Controls.MetroButton nextButton;
     }
 }

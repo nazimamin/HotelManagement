@@ -256,7 +256,7 @@ namespace Hotel_Manager
         {
 
             FoodMenu food_menu = new FoodMenu();
-            food_menu.metroPanel2.Visible = false;
+            food_menu.needPanel.Visible = false;
 
             food_menu.ShowDialog();
 

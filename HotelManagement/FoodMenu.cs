@@ -14,7 +14,6 @@ namespace Hotel_Manager
     public partial class FoodMenu : MetroForm
     {
 
-
         public FoodMenu()
         {
             InitializeComponent();
@@ -64,94 +63,58 @@ namespace Hotel_Manager
             get { return surprise; }
             set { surprise = value; }
         }
-      
-        private void FoodMenu_Load(object sender, EventArgs e)
+
+        private void nextButton_Click(object sender, EventArgs e)
         {
-        }
-
-        private void metroPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            if (metroCheckBox1.Checked)
+            if (breakfastCheckBox.Checked)
             {
-                BreakfastQ = Convert.ToInt32(metroTextBox1.Text);
+                BreakfastQ = Convert.ToInt32(breakfastQTY.Text);
             }
-            if (metroCheckBox2.Checked)
+            if (lunchCheckBox.Checked)
             {
-                LunchQ = Convert.ToInt32(metroTextBox2.Text);
+                LunchQ = Convert.ToInt32(lunchQTY.Text);
             }
-            if (metroCheckBox3.Checked)
+            if (dinnerCheckBox.Checked)
             {
-                DinnerQ = Convert.ToInt32(metroTextBox3.Text);
+                DinnerQ = Convert.ToInt32(dinnerQTY.Text);
             }
-            if (metroCheckBox4.Checked)
+            if (cleaningCheckBox.Checked)
             {
-                Cleaning = metroCheckBox4.Text;
-            } if (metroCheckBox5.Checked)
+                Cleaning = cleaningCheckBox.Text;
+            } if (towelsCheckBox.Checked)
             {
-                Towel = metroCheckBox5.Text;
+                Towel = towelsCheckBox.Text;
             } 
-            if (metroCheckBox7.Checked)
+            if (surpriseCheckBox.Checked)
             {
-                Surprise = metroCheckBox7.Text;
+                Surprise = surpriseCheckBox.Text;
             }
             
             this.Hide();
         }
 
-        private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
+        private void breakfastCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (metroCheckBox1.Checked)
+            if (breakfastCheckBox.Checked)
             {
-                metroTextBox1.Enabled = true;
+                breakfastQTY.Enabled = true;
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void lunchCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void metroCheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox2.Checked)
+            if (lunchCheckBox.Checked)
             {
-                metroTextBox2.Enabled = true;
+                lunchQTY.Enabled = true;
             }
         }
 
-        private void metroCheckBox3_CheckedChanged(object sender, EventArgs e)
+        private void dinnerCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (metroCheckBox3.Checked)
+            if (dinnerCheckBox.Checked)
             {
-                metroTextBox3.Enabled = true;
+                dinnerQTY.Enabled = true;
             }
-        }
-
-        private void metroPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void FoodMenu_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
-        private void FoodMenu_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-    
+        }    
     }
 }

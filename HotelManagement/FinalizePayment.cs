@@ -17,18 +17,18 @@ namespace Hotel_Manager
         {
             InitializeComponent();
             CenterToParent();
-            
         }
         public int totalAmountFromFrontend = 0;
-        private double finalTotalFinalized = 0.0;
         public int foodBill = 0;
+        private double finalTotalFinalized = 0.0;
+        private string paymentType;
+
+        
         public double FinalTotalFinalized
         {
             get { return finalTotalFinalized; }
             set { finalTotalFinalized = value; }
         }
-
-        private string paymentType;
 
         public string PaymentType
         {
@@ -69,23 +69,23 @@ namespace Hotel_Manager
          
             double totalWithTax = Convert.ToDouble(totalAmountFromFrontend) * 0.07; 
             double FinalTotal = Convert.ToDouble(totalAmountFromFrontend) + totalWithTax + foodBill;
-            metroLabel2.Text = "$" + Convert.ToString(totalAmountFromFrontend)+" USD";
-            metroLabel14.Text = "$" + Convert.ToString(foodBill) + " USD";
-            metroLabel6.Text = "$" + Convert.ToString(totalWithTax)+" USD";
-            metroLabel9.Text = "$" + Convert.ToString(FinalTotal) + " USD";
+            currentBillAmount.Text = "$" + Convert.ToString(totalAmountFromFrontend)+" USD";
+            foodBillAmount.Text = "$" + Convert.ToString(foodBill) + " USD";
+            taxAmount.Text = "$" + Convert.ToString(totalWithTax)+" USD";
+            totalAmount.Text = "$" + Convert.ToString(FinalTotal) + " USD";
             FinalTotalFinalized = FinalTotal;
 
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void nextButton_Click(object sender, EventArgs e)
         {   
 
             try
             {
-                PaymentType = metroComboBox12.Text;
-                PaymentCardNumber = metroTextBox10.Text;
-                MM_YY_Of_Card1 = metroComboBox1.SelectedItem.ToString() +"/"+ metroComboBox2.SelectedItem.ToString();
-                CVC_Of_Card1 = metroTextBox1.Text;
+                PaymentType = paymentComboBox.Text;
+                PaymentCardNumber = phoneNComboBox.Text;
+                MM_YY_Of_Card1 = monthComboBox.SelectedItem.ToString() +"/"+ yearComboBox.SelectedItem.ToString();
+                CVC_Of_Card1 = cvcComboBox.Text;
                 CardType1 = metroLabel11.Text;
                 
                 this.Hide();
@@ -96,69 +96,22 @@ namespace Hotel_Manager
             }
         }
 
-        private void FinalizePayment_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void metroTextBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-        }
-
-        private void metroLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void metroTextBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroComboBox12_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void metroTextBox10_Click(object sender, EventArgs e)
-        {
-         
-        }
-        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (metroTextBox10.Text.Substring(0, 1) == "3")
+            if (phoneNComboBox.Text.Substring(0, 1) == "3")
             {
                 metroLabel11.Text = "AmericanExpress";
             }
-            else if (metroTextBox10.Text.Substring(0, 1) == "4")
+            else if (phoneNComboBox.Text.Substring(0, 1) == "4")
             {
                 metroLabel11.Text = "Visa";
             }
-            else if (metroTextBox10.Text.Substring(0, 1) == "5")
+            else if (phoneNComboBox.Text.Substring(0, 1) == "5")
             {
                 metroLabel11.Text = "MasterCard";
             }
-            else if (metroTextBox10.Text.Substring(0, 1) == "6")
+            else if (phoneNComboBox.Text.Substring(0, 1) == "6")
             {
                 metroLabel11.Text = "Discover";
             }
@@ -166,31 +119,11 @@ namespace Hotel_Manager
                 metroLabel11.Text = "Unknown";
         }
 
-        private void metroLabel11_Click(object sender, EventArgs e)
+        private void phoneNComboBox_Leave(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTextBox10_Leave(object sender, EventArgs e)
-        {
-            long getphn = Convert.ToInt64(metroTextBox10.Text);
+            long getphn = Convert.ToInt64(phoneNComboBox.Text);
             string formatString = String.Format("{0:0000-0000-0000-0000}", getphn);
-            metroTextBox10.Text = formatString;
+            phoneNComboBox.Text = formatString;
         }
        
     }
