@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotel_Manager.exe" size="6643200">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotel_Manager.exe" size="6642688">
       <assemblyIdentity name="Hotel_Manager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xhVKtv3KSXdusrn2EgB5QG/XCVuq+72udKLGH0l9yRA=</dsig:DigestValue>
+        <dsig:DigestValue>R2RrNXtvugvN9klJ/g/i2yQ2gmSbc6PhnTjD5AcfskI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -131,13 +131,13 @@
       <dsig:DigestValue>bRrmJ1yDhzT9/5Azc6lW1S667/BsLhSDZkJS+jP1mAU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Hotel_Manager.exe.config" size="921">
+  <file name="Hotel_Manager.exe.config" size="906">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MvuWtABLymxOi+oKxsJLuc5T71Xs1waoAnfSeCt4vYc=</dsig:DigestValue>
+      <dsig:DigestValue>KJO9THfvzP0f1uamrRqjHq4WLUc5LFEQdSm7QvkgBjU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="login_manager.mdf" size="3211264" writeableType="applicationData">

@@ -97,7 +97,7 @@ namespace Hotel_Manager
         }
 
 
-        private void metroTextBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void monthComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (phoneNComboBox.Text.Substring(0, 1) == "3")
             {

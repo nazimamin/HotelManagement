@@ -17,8 +17,8 @@ namespace Hotel_Manager
 {
     public partial class Frontend : MetroForm
     {
-        string AccountSid = "Twilio Account Sid";
-        string AuthToken = "TwilioAuthToken";
+        string AccountSid = "ACcb86dacb791bef978628a2e16b1f7a24";
+        string AuthToken = "3f344a07336d2e0ac5e467f72a1e650d";
         string RecvPhoneNumber = "";
         public Frontend()
         {

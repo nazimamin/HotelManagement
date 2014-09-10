@@ -212,6 +212,7 @@
             this.monthComboBox.Size = new System.Drawing.Size(59, 29);
             this.monthComboBox.TabIndex = 34;
             this.monthComboBox.UseSelectable = true;
+            this.monthComboBox.SelectedIndexChanged += new System.EventHandler(this.monthComboBox_SelectedIndexChanged);
             // 
             // yearComboBox
             // 
