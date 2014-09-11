@@ -31,12 +31,12 @@ This is a simple HotelManagement tool that utilizes data from/to the sql databas
 
 #[Screenshots]
 
-![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/login.PNG)
-![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/payment.PNG)
-![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/food.PNG)
-![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/front.PNG)
-![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/roomservice.PNG)
-
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/login.PNG "Login window")
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/payment.PNG "Payment window")
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/food.PNG "Food selection window")
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/front.PNG "Front reservation window")
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/roomservice.PNG "Room service window")
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/toast.PNG "Toast confirmation")
 
 
 
