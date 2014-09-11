@@ -31,10 +31,8 @@ This is a simple HotelManagement tool that utilizes data from/to the sql databas
 
 #[Screenshots]
 
-![ScreenShot](https://raw.github.com/nazimamin/HotelManagement/master/HotelManagement/assets/front.png})
+![ScreenShot](https://raw.githubusercontent.com/nazimamin/HotelManagement/master/HotelManagement/assets/login.PNG)
 
-![Alt text](/HotelManagement/HotelManagement/assets/front.PNG?raw=true)
-![Settings Window](https://raw.github.com/nazimamin/HotelManagement/master/HotelManagement/assets/front.png)
 
 
 
