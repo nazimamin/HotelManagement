@@ -86,7 +86,7 @@ namespace Hotel_Manager
                 PaymentCardNumber = phoneNComboBox.Text;
                 MM_YY_Of_Card1 = monthComboBox.SelectedItem.ToString() +"/"+ yearComboBox.SelectedItem.ToString();
                 CVC_Of_Card1 = cvcComboBox.Text;
-                CardType1 = metroLabel11.Text;
+                CardType1 = cardTypeView.Text;
                 
                 this.Hide();
             }
@@ -101,22 +101,22 @@ namespace Hotel_Manager
         {
             if (phoneNComboBox.Text.Substring(0, 1) == "3")
             {
-                metroLabel11.Text = "AmericanExpress";
+                cardTypeView.Text = "AmericanExpress";
             }
             else if (phoneNComboBox.Text.Substring(0, 1) == "4")
             {
-                metroLabel11.Text = "Visa";
+                cardTypeView.Text = "Visa";
             }
             else if (phoneNComboBox.Text.Substring(0, 1) == "5")
             {
-                metroLabel11.Text = "MasterCard";
+                cardTypeView.Text = "MasterCard";
             }
             else if (phoneNComboBox.Text.Substring(0, 1) == "6")
             {
-                metroLabel11.Text = "Discover";
+                cardTypeView.Text = "Discover";
             }
             else
-                metroLabel11.Text = "Unknown";
+                cardTypeView.Text = "Unknown";
         }
 
         private void phoneNComboBox_Leave(object sender, EventArgs e)

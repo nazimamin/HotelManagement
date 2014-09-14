@@ -44,7 +44,7 @@
             this.yearComboBox = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.cvcComboBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.cardTypeView = new MetroFramework.Controls.MetroLabel();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.foodBillLabel = new MetroFramework.Controls.MetroLabel();
             this.foodBillAmount = new MetroFramework.Controls.MetroLabel();
@@ -265,15 +265,15 @@
             this.cvcComboBox.UseCustomBackColor = true;
             this.cvcComboBox.UseSelectable = true;
             // 
-            // metroLabel11
+            // cardTypeView
             // 
-            this.metroLabel11.AutoSize = true;
-            this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(296, 208);
-            this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(68, 19);
-            this.metroLabel11.TabIndex = 38;
-            this.metroLabel11.Text = "Unknown";
+            this.cardTypeView.AutoSize = true;
+            this.cardTypeView.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.cardTypeView.Location = new System.Drawing.Point(296, 208);
+            this.cardTypeView.Name = "cardTypeView";
+            this.cardTypeView.Size = new System.Drawing.Size(68, 19);
+            this.cardTypeView.TabIndex = 38;
+            this.cardTypeView.Text = "Unknown";
             // 
             // metroLabel12
             // 
@@ -315,7 +315,7 @@
             this.Controls.Add(this.foodBillAmount);
             this.Controls.Add(this.foodBillLabel);
             this.Controls.Add(this.metroLabel12);
-            this.Controls.Add(this.metroLabel11);
+            this.Controls.Add(this.cardTypeView);
             this.Controls.Add(this.cvcComboBox);
             this.Controls.Add(this.metroLabel10);
             this.Controls.Add(this.yearComboBox);
@@ -360,7 +360,7 @@
         private MetroFramework.Controls.MetroLabel totalLabel;
         private MetroFramework.Controls.MetroLabel totalAmount;
         private MetroFramework.Controls.MetroLabel metroLabel10;
-        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroLabel cardTypeView;
         private MetroFramework.Controls.MetroLabel metroLabel12;
         public MetroFramework.Controls.MetroTextBox phoneNComboBox;
         public MetroFramework.Controls.MetroComboBox paymentComboBox;
