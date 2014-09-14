@@ -15,7 +15,7 @@ This is a simple HotelManagement tool that utilizes data from/to the sql databas
 * On the line: queue in order
 * Overview: full data grid view of occupancy
 
-* This program is written for educational purposes only. 
+
 
 #[Login]
 * Kitchen - Username: kitchen , password: kitchen
@@ -40,3 +40,4 @@ This is a simple HotelManagement tool that utilizes data from/to the sql databas
 
 
 
+* This program is written for educational purposes only. 
